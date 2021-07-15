@@ -1,6 +1,5 @@
 import bibtexparser as bp
 import re
-
     
 with open("neu.bib") as bibfile:
     bib_db = bp.bparser.BibTexParser(common_strings=True).parse_file(bibfile)
