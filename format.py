@@ -64,7 +64,7 @@ for entry in bib_db.entries:
     try: 
         ltitle = hentry['title'].split()
         title = re.sub(r'\W+', '', ltitle[0])
-        if title.lower() in ('the', 'a'):
+        if title.lower() in ('the', 'a', 'an'):
             title = re.sub(r'\W+', '', ltitle[1])
     except:
         title = 'notitle'
